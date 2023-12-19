@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; 
+    overflow-x:hidden;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    padding-right: 1.6rem;
+    gap: 3.8rem;
+    
+}
+
+.btn {
+    font-weight: bold;
+    background-color: #f1c40f;
+}
+.container {
+    max-width: 960px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+}
+
+
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 7rem;
+    
+}
+.features .feature {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.features .feature div {
+    margin-left: 8rem;
+}
+
+.features .feature div h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.features .feature div p {
+    font-size: 1.6rem;
+}
+.features .feature i {
+    color: orange;
+    /* width: 15rem; */
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 2.5rem 8rem;
+}
+
+.footer .footer-links {
+    display: flex;
+    gap: 2rem;
+}
+.how-it-works {
+    text-align: center;
+}
+
+.how-it-works .video {
+    width: 600px;
+    margin-bottom: 9rem;
+}
+
+.logo {
+    width: 300px;
+}
+
+.message-box {
+    margin-top: 6rem;
+    text-align: center;
+    margin-bottom: 9rem;
+}
+
+.message-box h1 {
+    font-size: 3rem;
+    margin-bottom: 1.7rem;
+}
+
+.message-box input{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.7rem;
+    padding: 0.7rem 1rem;
+    width: 30%;
+    max-width: 30rem;
+    min-width: 17rem;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.nav-link {
+    font-size: 1.7rem;
+    color: #000;
+}
+
+.pricing {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+.pricing .price-box{
+    border: 3px solid #333;
+    border-radius: 2px;
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+
+.pricing .price-box h3 {
+    padding: 1.6rem 0;
+    background-color: #ddd;
+}
+
+.pricing .price-box h2 {
+    padding: 1.6rem 0;
+}
+
+.pricing .price-box p {
+    padding: 0 4rem 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.pricing .price-box a {
+    padding: .5rem 4rem;
+}
+
+/* FOR TABLET AND SMARTPHONE  */
+
+@media only screen and (max-width: 800px) {
+    
+    .logo {
+        margin-left: -2rem;
+        margin-bottom: 1rem;
+    }
+    .nav-bar {
+        flex-direction: column;
+        padding: 1.8rem 0 1.6rem;
+    }
+
+    .nav-bar ul {
+        padding-right: 0;
+    }
+
+    .message-box {
+        margin-top: 9rem;
+    }
+
+}
