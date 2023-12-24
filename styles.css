@@ -84,6 +84,7 @@ ul {
     display: flex;
     gap: 2rem;
 }
+
 .how-it-works {
     text-align: center;
 }
@@ -166,6 +167,7 @@ ul {
     padding: .5rem 4rem;
 }
 
+
 /* FOR TABLET AND SMARTPHONE  */
 
 @media only screen and (max-width: 800px) {
@@ -174,6 +176,7 @@ ul {
         margin-left: -2rem;
         margin-bottom: 1rem;
     }
+    
     .nav-bar {
         flex-direction: column;
         padding: 1.8rem 0 1.6rem;
