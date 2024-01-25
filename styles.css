@@ -157,6 +157,7 @@
   background-color: rgb(52, 46, 87);
   color: white;
   margin-bottom: 1.5em;
+  cursor: pointer;
 }
 
 .newsletter {
