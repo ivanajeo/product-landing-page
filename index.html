@@ -3,89 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Cass Class | freecodecamp Challenge</title>
 </head>
 <body>
-    <header>
+    <main class="main-page">
         <nav class="nav-bar">
-            <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" class="logo" />
-            <ul>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#how-it-works" class="nav-link">How It Works</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-            </ul>
+            <div class="nav-bar__container">
+                <img class="logo" src="public/CassClassLogo.png" alt="Cass Class Logo white"/>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#video" class="nav-link">Video</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#newsletter" class="nav-link">Newsletter</a>
+                </div>
+            </div>
         </nav>
-    </header>
-    <main>
-        <div class="container">
-            <section class="message-box">
-                <h1>Handcrafted, hone-made masterpieces</h1>
-                <input type="email" id="email" name="email" placeholder="youremail@mail.com">
-                <input type="submit" value="GET STARTED" class="btn">
-            </section>
-
-            <section class="features" id="features">
-                <div class="feature">
-                    <i class="fa-solid fa-fire fa-4x"></i>
-                    <div>
-                        <h2>Premium Materials</h2>
-                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
-                    </div>
+        <div class="features" id="features">
+            <div class="feature">
+                <i class="feature__logo fa-regular fa-gem"></i>
+                <div class="feature__text">
+                    <h3 class="feature__header">Finest Materials</h3>
+                    <p class="feature__desc">Our bases use the best quality materials.</p>
                 </div>
-                <div class="feature">
-                    <i class="fa-solid fa-truck-fast fa-3x"></i>
-                    <div>
-                        <h2>Fast Shipping</h2>
-                        <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-                    </div>
+            </div>
+            <div class="feature">
+                <i class="feature__logo fa-solid fa-hand-holding-heart"></i>
+                <div class="feature__text">
+                    <h3 class="feature__header">Quality Control</h3>
+                    <p class="feature__desc">We meticulously inspect each of our products to ensure they meet the highest quality standards.</p>
                 </div>
-                <div class="feature">
-                    <i class="fa-solid fa-battery-full fa-3x"></i>
-                    <div>
-                        <h2>Quality Assurance</h2>
-                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-                    </div>
+            </div>
+            <div class="feature">
+                <i class="feature__logo fa-solid fa-truck-arrow-right"></i>
+                <div class="feature__text">
+                    <h3 class="feature__header">Swift Delivery</h3>
+                    <p class="feature__desc">Your order will get to you before you know it!</p>
                 </div>
-            </section>
-
-            <section class="how-it-works" id="how-it-works">
-                <iframe width="791" height="445" src="https://www.youtube.com/embed/Cl9LX3tQgtk" title="How A Trombone Is Made | How Do They Do It?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-            </section>
-
-            <section id="pricing" class="pricing">
-                <div class="price-box">
-                    <h3>TENOR TROMBONE</h3>
-                    <h2>$600</h2>
-                    <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
-                    <a class="btn">SELECT</a>
+            </div>
+        </div>
+        <div class="video-container" id="video">
+            <iframe class="video" src="https://www.youtube.com/embed/ZXK4FTUcrOc?list=PLRBp0Fe2GpgldeOARW7dHYZltuBxWx1ks" title="Droptek - New Style [NCS Release]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="pricing" id="pricing">
+            <div class="pricing-box">
+                <div class="pricing-box__header-container">
+                    <h3 class="pricing-box__header">Acoustic Bass Guitars</h3>
                 </div>
-                <div class="price-box">
-                    <h3>BASS TROMBONE</h3>
-                    <h2>$900</h2>
-                    <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
-                    <a class="btn">SELECT</a>
+                <h2 class="pricing-box__price">$500</h2>
+                <p class="pricing-box__desc">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Lorem.</p>
+                <button class="button">buy</button>
+            </div>
+            <div class="pricing-box">
+                <div class="pricing-box__header-container">
+                    <h3 class="pricing-box__header">Ukulele Bass</h3>
                 </div>
-                
-                <div class="price-box">
-                    <h3>VALVE TROMBONE</h3>
-                    <h2>$1200</h2>
-                    <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
-                    <a class="btn">SELECT</a>
+                <h2 class="pricing-box__price">$775</h2>
+                <p class="pricing-box__desc">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Lorem.</p>
+                <button class="button">buy</button>
+            </div>
+            <div class="pricing-box">
+                <div class="pricing-box__header-container">
+                    <h3 class="pricing-box__header">Fretless Bass guitars</h3>
                 </div>
-            </section>
+                <h2 class="pricing-box__price">$1250</h2>
+                <p class="pricing-box__desc">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Lorem.</p>
+                <button class="button">buy</button>
+            </div>
+        </div>
+        <div class="newsletter" id="newsletter">
+            <h3 class="newsletter__header">Best.Bass.Ever</h3>
+            <input type="text" class="newsletter__input" placeholder="Enter your email address" />
+            <button class="button">join our newsletter</button>
         </div>
     </main>
     <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Privacy</a>
-            <a href="#">Contact</a>
-            <a href="#">Terms</a>
+        <div class="footer__container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Contact</a>
+            </div>
+            <div class="attribution">
+                <p>Challenge by <a href="#" target="_blank">freecodecamp</a>. </p>
+                <p>Coded by <a href="#">ivanajeo</a>.</p>
+            </div>
+            <p class="copyright">Copyright 2023, Cass Class</p>
         </div>
-        <div>
-            <p>&copy;Copyright 2016, Original Trombones</p>
-        </div>
+
     </footer>
+
+    
 </body>
 </html>
